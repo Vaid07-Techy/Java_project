@@ -205,7 +205,9 @@ navigate Into the project Folder :
 After cloning you will see your project folder in instance, enter in that folder
 
 for eg :
+
 ![](images/repo-folder-ec2.png)
+
 ```
 cd <your project folder name>
 ```
@@ -213,9 +215,11 @@ cd <your project folder name>
 Note :- make sure you have created your project repo on GitHub where you have uploaded your working project
 
 my Repo :
+
 ![](images/github-repo.png)
 
 repo url :
+
 ![](images/repo-url.png)
 
 Note : use this url while cloning the project in EC2 instance
@@ -303,9 +307,11 @@ Hello from AWS EC2!
 ## Output
 
 Endpoint : /
+
 ![](images/endpoint-1.png)
 
 Endpoint : /hello
+
 ![](images/endpoint-2.png)
 
 
@@ -376,6 +382,7 @@ An endpoint is a URL through which a client can communicate with an application.
 Our application has two endpoints.
 
 Endpoint 1:
+
 ``` 
 /
 ```
@@ -391,16 +398,19 @@ public String home() {
 ```
 
 When we request:
+
 ```
 GET /
 ```
 
 the application returns:
+
 ```
 Java application is running!
 ```
 
 For example:
+
 ```
 http://<EC2-PUBLIC-IP>:8080/
 ```
@@ -408,11 +418,13 @@ http://<EC2-PUBLIC-IP>:8080/
 This endpoint is mainly used to check whether the application is running.
 
 Endpoint 2: 
+
 ```
 /hello
 ```
 
 The controller contains:
+
 ```
 @GetMapping("/hello")
 public String hello() {
@@ -421,16 +433,19 @@ public String hello() {
 ```
 
 When we request:
+
 ```
 GET /hello
 ```
 
 the application returns:
+
 ```
 Hello from AWS EC2!
 ```
 
 For example:
+
 ```
 http://<EC2-PUBLIC-IP>:8080/hello
 ```
