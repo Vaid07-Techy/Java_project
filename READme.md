@@ -437,3 +437,10 @@ http://<EC2-PUBLIC-IP>:8080/hello
 
 This demonstrates how a Spring Boot application can expose different URLs for different functionality.
 
+
+Author
+
+Vaidehi Gawde
+
+BSc Computer Science | Cloud Computing Learner
+
